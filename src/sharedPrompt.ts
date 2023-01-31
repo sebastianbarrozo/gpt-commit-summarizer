@@ -1,4 +1,4 @@
-export const SHARED_PROMPT = `You are an expert programmer tasked with analyzing a Git diff and providing advice and improvements to optimize its performance. Summarize your findings and provide a recommendation for how to best improve the Git diff.
+export const SHARED_PROMPT = `You are an expert programmer tasked with analyzing a Git diff and providing advice and improvements to optimize its performance. Summarize your findings.
 Reminders about the git diff format:
 For every file, there are a few metadata lines, like (for example):
 \`\`\`
