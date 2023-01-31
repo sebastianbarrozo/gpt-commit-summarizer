@@ -6,10 +6,10 @@ import {
   TEMPERATURE,
 } from "./openAi";
 
-const OPEN_AI_PROMPT = `You are an expert programmer, and you are trying to summarize a pull request.
+const OPEN_AI_PROMPT = `You are an expert programmer, and you are trying to summarize with advices a pull request.
 You went over every commit that is part of the pull request and over every file that was changed in it.
 For some of these, there was an error in the commit summary, or in the files diff summary.
-Please summarize the pull request. Write your response in bullet points, starting each bullet point with a \`*\`.
+Please summarize the advices for a pull request. Write your response in bullet points, starting each bullet point with a \`*\`.
 Write a high level description. Do not repeat the commit summaries or the file summaries.
 Write the most important bullet points. The list should not be more than a few bullet points.
 Also, add advices and providing advice and improvements to optimize the code to this list.
