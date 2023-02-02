@@ -5,8 +5,8 @@ const configuration = new Configuration({
 });
 
 export const MAX_OPEN_AI_QUERY_LENGTH = 20000;
-export const MODEL_NAME = "text-davinci-003";
-export const TEMPERATURE = 0.5;
+export const MODEL_NAME = "text-chat-davinci-002-20230126";
+export const TEMPERATURE = 0.9;
 export const MAX_TOKENS = 512;
 
 export const openai = new OpenAIApi(configuration);
