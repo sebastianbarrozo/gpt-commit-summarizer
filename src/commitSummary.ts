@@ -84,7 +84,7 @@ async function getOpenAICompletion(
       .map((file: any) => formatGitDiff(file.filename, file.patch))
       .join("\n");
     // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-    const openAIPrompt = `${OPEN_AI_PRIMING}\n\nTHE GIT DIFF TO BE SUMMARIZED:\n\`\`\`\n${rawGitDiff}\n\`\`\`\n\nTHE SUMMERY:\n`;
+    const openAIPrompt = `${OPEN_AI_PRIMING}\n\nTHE GIT DIFF TO BE COMMENTED:\n\`\`\`\n${rawGitDiff}\n\`\`\`\n\nTHE SUMMERY:\n`;
 
     console.log(
       `OpenAI prompt for commit ${diffMetadata.commit.data.sha}: ${openAIPrompt}`

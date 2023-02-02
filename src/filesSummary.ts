@@ -37,7 +37,7 @@ async function getOpenAISummaryForFile(
   patch: string
 ): Promise<string> {
   try {
-    const openAIPrompt = `${OPEN_AI_PROMPT}\n\nTHE GIT DIFF OF ${filename} TO BE SUMMARIZED:\n\`\`\`\n${patch}\n\`\`\`\n\nSUMMARY:\n`;
+    const openAIPrompt = `${OPEN_AI_PROMPT}\n\nTHE GIT DIFF OF ${filename} TO BE COMMENTED:\n\`\`\`\n${patch}\n\`\`\`\n\COMMENTS:\n`;
     console.log(`OpenAI file summary prompt for ${filename}:\n${openAIPrompt}`);
 
     if (openAIPrompt.length > MAX_OPEN_AI_QUERY_LENGTH) {
