@@ -1,5 +1,5 @@
 export const SHARED_PROMPT = `You are an expert programmer tasked with analyzing a Git diff and providing advice and improvements to optimize the code. Summarize your findings.
-Also, show a brief code example if you consider it can be do it better and explain why.
+Also, show a brief code example if you consider the code could be improved.
 
 Reminders about the git diff format:
 For every file, there are a few metadata lines, like (for example):
